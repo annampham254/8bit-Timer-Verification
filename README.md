@@ -1,23 +1,9 @@
-﻿# 8-bit Timer — Verification
+# 8-bit Timer — Verification
 
 ## Overview
 Class-based (non-UVM) verification environment for an **8-bit programmable Timer** with APB-like register interface.
 
 The testbench verifies timer counting (up/down), clock divider configurations, load functionality, interrupt generation (overflow/underflow), register access, and various corner-case scenarios.
-
-## Architecture
-```
-+----------------+       +-------------+       +-----------+
-|   Test Cases   | ----> | Environment | ----> | Timer DUT |
-| (52 directed)  |       | (Class-based)|      | (RTL)     |
-+----------------+       +-------------+       +-----------+
-                               |
-                    +----------+----------+
-                    |                     |
-              +-----------+      +----------------+
-              | Scoreboard|      | Coverage Model |
-              +-----------+      +----------------+
-```
 
 ## Key Features
 - **Class-based methodology** with driver, monitor, scoreboard
@@ -35,12 +21,13 @@ The testbench verifies timer counting (up/down), clock divider configurations, l
 | TIE | 0x03 | Timer Interrupt Enable |
 
 ## Directory Structure
-`
+
+```
 project1/
 ├── tb/             # Environment, scoreboard, driver, monitor
 ├── testcase/       # 52 directed test cases
 └── sim/            # Makefile, regression scripts
-`
+```
 
 ## Results
 
