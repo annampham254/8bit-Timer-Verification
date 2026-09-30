@@ -25,7 +25,7 @@ The testbench verifies timer counting (up/down), clock divider configurations, l
 ```
 project1/
 ├── tb/             # Environment, scoreboard, driver, monitor
-├── testcase/       # 52 directed test cases
+├── testcase/       # 57 directed test cases
 └── sim/            # Makefile, regression scripts
 ```
 
