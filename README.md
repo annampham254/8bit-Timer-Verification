@@ -1,4 +1,4 @@
-# 8-bit Timer — Verification
+# 8-bit Timer — Black-Box Verification
 
 ## Overview
 Class-based (non-UVM) verification environment for an **8-bit programmable Timer** with APB-like register interface.
@@ -32,7 +32,7 @@ project1/
 ## Results
 
 ### Regression
-All **52/52** test cases passed.
+The recorded regression ran **57 test cases: 47 passed and 10 failed**. The failing cases exposed bugs in the supplied RTL during black-box verification; these findings were reported to the instructor. The screenshot below records the results and the affected test cases.
 
 ![Regression Results](Regression.png)
 
