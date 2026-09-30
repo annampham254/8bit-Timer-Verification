@@ -9,7 +9,7 @@ The testbench verifies timer counting (up/down), clock divider configurations, l
 - **Class-based methodology** with driver, monitor, scoreboard
 - **Embedded functional coverage** in scoreboard (covergroups for APB transfers, timer control, status, interrupts)
 - **Self-checking scoreboard** with reference model for timer counting, overflow/underflow detection
-- **52 directed test cases** organized by feature
+- **57 directed test cases** organized by feature
 - **Regression automation** via Perl script + Makefile
 
 ## Register Map
